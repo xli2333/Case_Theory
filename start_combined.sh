@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# 0. 确保日志目录存在
+mkdir -p data/logs
+
 # 1. 在后台启动 FastAPI 后端 (固定端口 8000)
 # 使用 & 符号让它在后台运行
 echo "Starting Backend on port 8000..."
