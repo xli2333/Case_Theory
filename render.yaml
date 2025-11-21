@@ -3,12 +3,13 @@ services:
     name: casecheck-app
     env: python
     plan: starter
-    pythonVersion: 3.10
     buildCommand: pip install -r requirements.txt
     # 使用混合启动脚本同时运行前后端
     startCommand: bash start_combined.sh
     healthCheckPath: /health
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
       - key: PYTHONPATH
         value: /opt/render/project/src
       - key: HF_HOME
