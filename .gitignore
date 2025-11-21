@@ -1,0 +1,23 @@
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.env
+venv/
+.venv/
+
+# Logs and runtime artifacts
+*.log
+*.pid
+data/logs/
+!data/logs/.gitkeep
+
+# Model cache (downloaded at runtime)
+data/models/
+!data/models/.gitkeep
+
+# Editor junk
+.DS_Store
+Thumbs.db
