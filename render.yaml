@@ -6,7 +6,7 @@ services:
     pythonVersion: 3.10
     buildCommand: pip install -r requirements.txt
     # 使用混合启动脚本同时运行前后端
-    startCommand: bash render_deploy/start_combined.sh
+    startCommand: bash start_combined.sh
     healthCheckPath: /health
     envVars:
       - key: PYTHONPATH
